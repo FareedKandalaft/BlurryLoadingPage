@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  background: url('https://images.unsplash.com/photo-1571265671888-ffd0dfcdac96?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fG55YyUyMHN1bnNldHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=800')
+    no-repeat center center/cover;
+  position: absolute;
+
+  /* Standard placement will have a large white oustide blurry border */
+  /* top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; */
+
+  /* offsetting top and left and also increasing width and height pushes the white offscreen */
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 30px);
+  height: calc(100vh + 60px);
+
+  z-index: -1;
+  filter: blur(0px);
+}
+
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+}
